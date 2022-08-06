@@ -1,0 +1,34 @@
+//Colors
+
+$color-bg: #ffff;
+$colow-bg-shadow: #e0e0e0;
+$color-accent: #ff9b4e;
+$color-bg-pre-header: #90caf9;
+$color-bg-header: #ffff;
+$color-bg-save: #ffe082;
+$color-checkmark: #91b83d;
+$color-text-dark: #22222c;
+$color-text-light: #ffff;
+$color-text-link: #79addc;
+$color-feature-text: #424242;
+$color-box-grey: #ebebeb;
+
+// Font Size
+
+// Font Line Height
+
+// Font Weights
+
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
+
+$font-weight: (
+    'regular': 400,
+    'regular': 400,
+    'regular': 400,
+);
+
+body {
+    font-weight: weight(regular);
+}

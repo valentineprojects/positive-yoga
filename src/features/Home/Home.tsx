@@ -1,4 +1,5 @@
 import styles from './Home.module.scss';
+import react from 'react';
 
 const Home = () => {
 	return (
