@@ -1,0 +1,52 @@
+@use 'common/styles/_variables' as *;
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+@import url(./_reset.scss);
+
+/* Scrooling behavior */
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'SF Pro Display', sans-serif;
+  background: $color-bg;
+  color: $color-text-dark;
+  font-style: normal;
+}
+
+/* Header sizes */
+
+@mixin headerSizing($h) {
+  font-weight: weight($h);
+  font-size: size($h);
+  line-height: height($h);
+}
+
+h1 {
+  @include headerSizing(h1);
+}
+
+h2 {
+  @include headerSizing(h2);
+}
+
+h3 {
+  @include headerSizing(h3);
+}
+
+h5 {
+  @include headerSizing(h5);
+}
+
+section {
+  margin: 0px 16px;
+}
+
+/* Link syles */
+a:link,
+a:visited {
+  color: $color-text-link;
+}

@@ -1,0 +1,40 @@
+@use 'common/styles/variables' as *;
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 40px;
+    background: $color-accent;
+    box-shadow: 0px 16px 32px rgba(255, 155, 78, 0.24);
+    border-radius: 8px;
+    color: $color-text-light;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    margin: 16px 0px;
+}
+
+.btn-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: center;
+    letter-spacing: -0.4px;
+    height: 56px;
+    transition-delay: 1s;
+    transition: 1s fade-in;
+    transition-duration: 0.5s;
+}
+
+.btn-size {
+    height: 56px;
+    min-width: 343px;
+    margin: 3rem 0 3rem 0;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right, var(--color-accent), var(--color-bg-save));
+    cursor: pointer;
+}

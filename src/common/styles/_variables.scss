@@ -1,0 +1,100 @@
+//Colors
+
+$color-bg: #ffff;
+$colow-bg-shadow: #e0e0e0;
+$color-accent: #ff9b4e;
+$color-bg-pre-header: #90caf9;
+$color-bg-header: #ffff;
+$color-bg-save: #ffe082;
+$color-checkmark: #91b83d;
+$color-text-dark: #22222c;
+$color-text-light: #ffff;
+$color-text-link: #79addc;
+$color-feature-text: #424242;
+$color-box-grey: #ebebeb;
+
+// Font Size
+
+$font-sizes: (
+    'h1': 40px,
+    'h2': 32px,
+    'h3': 24px,
+    'h5': 16px,
+    'text': 12px,
+    'big-text': 14px,
+);
+
+@function size($size) {
+    @return map-get($font-sizes, $size);
+}
+
+// Font Line Height
+$font-heights: (
+    'h1': 56px,
+    'h2': 44px,
+    'h3': 32px,
+    'h5': 24px,
+    'tiny': 18px,
+    'small': 20px,
+    'normal': 24px,
+    'big': 28px,
+    'huge': 32px,
+);
+
+@function size($height) {
+    @return map-get($font-heights, $height);
+}
+
+// Font Weights
+
+$font-weights: (
+    'h1': 800,
+    'h2': 700,
+    'h3': 700,
+    'h5': 600,
+    'medium': 400,
+    'semi-bold': 500,
+    'bold': 600,
+    'heavy': 700,
+    'black': 800,
+);
+@function weight($weight) {
+    @return map-get($font-weights, $weight);
+}
+
+//Flex mixins
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//Theme
+
+@mixin theme($dark-theme: true) {
+    @if $dark-theme {
+        background: darken($color-bg, $amount: 100%);
+        color: lighten($color-text-dark, $amount: 100%);
+    }
+}
+
+.light {
+    @include theme($dark-theme: true);
+}
+
+//Media
+$mobile: 376px;
+
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+// how to use
+.main {
+    @include mobile {
+        flex-direction: column;
+    }
+}

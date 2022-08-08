@@ -1,0 +1,77 @@
+@use 'common/styles/_variables' as *;
+
+/* Sticky header */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+/* Pre-header */
+.discount {
+    background: $color-bg-pre-header;
+    color: var(--color-text-light);
+    width: 100%;
+    height: 56px;
+
+    font: inherit;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1.8px;
+}
+/* Header */
+.header {
+    @include flexCenter;
+    background-color: $color-bg-header;
+    margin-left: auto;
+    margin-right: auto;
+    top: 1.44%;
+    bottom: 96.7%;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.04);
+}
+/* Header items */
+.icon-offer {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.logo {
+    width: 133.33px;
+    height: 72px;
+    margin-top: 56px;
+}
+.order-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 48px 16px 0 16px;
+}
+/* Media query */
+@media screen and (max-width: 376px) {
+    .icon-offer {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .order-count {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        margin: 16px 16px 8px 16px;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+    }
+    .logo {
+        height: 74px;
+    }
+}
