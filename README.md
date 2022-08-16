@@ -1,6 +1,8 @@
 # Landing Page for Positive Yoga
 
-Demo -> 
+Getting Started with Create React App Live DEMO: https://positive-yoga.netlify.app/
+
+IT'S REWORKED APP MADE WITH JS WITH MANY BAD PRACTICES, REWORKING TO IMPLEMENT TS, SASS and clean code architecture.
 
 # Stack Used
 React
