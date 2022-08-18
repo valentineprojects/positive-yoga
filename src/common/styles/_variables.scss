@@ -21,7 +21,8 @@ $font-sizes: (
     'h3': 24px,
     'h5': 16px,
     'text': 12px,
-    'big-text': 14px,
+    'normal': 14px,
+    'big': 16px,
 );
 
 @function size($size) {
@@ -41,7 +42,7 @@ $font-heights: (
     'huge': 32px,
 );
 
-@function size($height) {
+@function height($height) {
     @return map-get($font-heights, $height);
 }
 
@@ -52,6 +53,7 @@ $font-weights: (
     'h2': 700,
     'h3': 700,
     'h5': 600,
+    'light': 300,
     'medium': 400,
     'semi-bold': 500,
     'bold': 600,

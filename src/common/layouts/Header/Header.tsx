@@ -4,10 +4,10 @@ import styles from './Header.module.scss';
 
 const Header = () => {
 	return (
-		<div className={styles.sticky}>
+		<header>
 			<Discount />
 			<Logo />
-		</div>
+		</header>
 	);
 };
 export default Header;
