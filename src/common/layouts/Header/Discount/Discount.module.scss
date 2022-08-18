@@ -14,18 +14,22 @@
     height: 56px;
 
     font-weight: weight(light);
-    font-size: size(big);
+    font-size: size(header);
     line-height: height(small);
     letter-spacing: 1.8px;
-
-    @include mobile {
-        font-weight: weight(bold);
-        flex-direction: column;
-    }
 }
 
 .icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 1rem;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+.countdown {
+    margin: 0 5px;
+    font-weight: weight(bold);
+}
+
+.completed {
+    color: $color-accent;
 }
