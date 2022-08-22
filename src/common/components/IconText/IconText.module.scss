@@ -1,0 +1,202 @@
+/* Right side */
+/* Icons */
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.iconContainer {
+    align-items: center;
+    margin-right: 16px;
+}
+
+.icon {
+    max-width: 48px;
+    max-height: 48px;
+}
+
+.textContainer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    p {
+        opacity: 0.64;
+    }
+}
+
+/* Media queries */
+
+/* Tablets */
+@media screen and (max-width: 760px) {
+    .flex-parent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .child1 {
+        width: 100%;
+        max-width: 760px;
+        justify-content: center;
+    }
+    .box-text > div > h2,
+    h5 {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+    }
+    .box-text-payment-plan {
+        display: flex;
+        align-items: left;
+    }
+    .text-container {
+        max-width: 760px;
+    }
+    .safe-checkout-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .child2 {
+        align-items: left;
+        width: 100%;
+        max-width: 760px;
+    }
+    .icon-child {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+    }
+    .icon-child-text > p,
+    h5 {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+    }
+}
+
+/* Smartphones */
+@media screen and (max-width: 376px) {
+    /* .flex-parent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2rem;
+  } */
+    .child1 {
+        width: 100%;
+        max-width: 470px;
+        justify-content: center;
+    }
+    /* Fonts */
+    .child1 > h3,
+    span {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: left;
+    }
+
+    .child1 > h3 > span {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: left;
+    }
+
+    .box > h2 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .box-text > div > h5 {
+        align-items: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .box-text-save {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .box-text-price > h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .box-text-price > h2 > span {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .box-text-payment-plan {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .box-text-payment-plan > span {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .text-cross {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .icon-child-text {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        float: left;
+    }
+    .icon-child-text > p {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: left;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .icon-child-text > h5 {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: left;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .icon-parent {
+        width: 100%;
+    }
+}

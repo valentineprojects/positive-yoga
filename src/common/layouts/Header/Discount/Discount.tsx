@@ -1,7 +1,7 @@
 import styles from './Discount.module.scss';
 import offerIcon from 'assets/mdi_local_offer.svg';
 import Countdown, { zeroPad } from 'react-countdown';
-import { discountHeader } from 'config/config';
+import { discountHeader, countdownDuration15MIN } from 'config/config';
 
 interface CountdownProps {
 	hours: number;
@@ -9,8 +9,6 @@ interface CountdownProps {
 	seconds: number;
 	completed: boolean;
 }
-
-const countdownDuration15MIN = 1000 * 60 * 15;
 
 const Discount = () => {
 	const renderer = ({ hours, minutes, seconds, completed }: CountdownProps) => {
